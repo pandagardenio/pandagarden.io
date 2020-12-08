@@ -1,0 +1,14 @@
+{
+  "name": "@pandagardenio/pandagardenio",
+  "version": "1.0.0",
+  "description": "Main site for pandagardenio",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./build",
+    "build": "cp -r web ./build",
+    "prestart": "npm run build",
+    "start": "npx http-server ./build"
+  },
+  "author": "",
+  "license": "ISC"
+}
