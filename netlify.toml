@@ -1,0 +1,22 @@
+[[redirects]]
+  from = "http://dazzling-meitner-dda3fe.netlify.app/*"
+  to = "https://pandagarden.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://dazzling-meitner-dda3fe.netlify.app/*"
+  to = "https://pandagarden.io/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://pandagarden.io/*"
+  to = "https://pandagarden.io/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
